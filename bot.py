@@ -1,9 +1,9 @@
-from telegram import Update, InlineKeyboardMarkup, InlineKeyboardButton
-from telegram.ext import ApplicationBuilder, CommandHandler, CallbackQueryHandler, ContextTypes
 import os
+from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes, CallbackQueryHandler
 
-# === НАСТРОЙКИ ===
-TOKEN = "8135151178:AAFw9fZRxOaG8T-dAo3PN6V2vzoUAeK5cS8"
+# Используем переменную окружения
+TOKEN = os.environ["TOKEN"]
 MEMES_FOLDER = "memes"
 
 # === ДАННЫЕ ===
